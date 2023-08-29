@@ -1,0 +1,202 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{August 2023}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{María Fernanda}{Jimenez Reyes}{Bióloga Marina. Doctora en Acuicultura}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{Mafe.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{Formación}\\[0.5em]
+
+{Bióloga marina de la Universidad Jorge Tadeo Lozano-Bogotá y Doctora en Acuicultura de la Pontificia Universidad Católica de Valparaíso}
+\bigskip
+
+\bg{cvgreen}{white}{personal} \\[0.5em]
+María Fernanda Jiménez Reyes
+
+nationalidad: Colombiana 
+
+1984
+
+\bigskip
+
+\bg{cvgreen}{white}{Areas of especialización} \\[0.5em]
+
+Ecología trófica ~•~ Microbiología ~•~ Probióticos ~•~ expresión génica ~•~ pesquería
+
+\bigskip
+
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+
+\lorem
+\bigskip
+
+\bg{cvgreen}{white}{Intereses}\\[0.5em]
+
+\texttt{Ecología trófica} ~/~ \texttt{microbiología} ~/~ \texttt{expresión génica} ~/~ \texttt{descarte}
+
+
+
+\vspace{4em}
+
+\infobubble{\faAt}{cvgreen}{white}{mariafej.84@gmail.com}
+\infobubble{\faFacebook}{cvgreen}{white}{Maria Fernanda Jimenez Reyes}
+\infobubble{\faGithub}{cvgreen}{white}{MaferJi}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Resumen corto}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2008}{Bióloga marina}{Bogotá}{Colombia \color{cvred}}{Universidad de Bogotá Jorge Tadeo Lozano.\bigskip}{2023-08-29_08h39_02.png} \\
+    \cvevent{2015}{Doctora en Acuicultura}{Valparaíso}{Chile \color{cvred}}{Pontificia universidad Católica de Valparaíso. \bigskip}{2023-08-29_08h40_02.png}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Cursos}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2004}{Biología mamíferos marinos}{Biología e identificación}{Fundación Red Colombiana de Varamientos  \color{headerblue}}{}{disney.png} \\
+    \cvdegree{2010}{Ecología parasitaria}{Bivalvos de interés comercial.}{Uruguay \color{headerblue}}{}{medal.jpeg} \\
+    \cvdegree{2017}{Curso internacional}{Cambio Climático y Acuicultura.}{Chile \color{headerblue}}{}{medal.jpeg}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Programación}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{Microsoft Office®} &  \barrule{0.4}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{REST 2009®} & \barrule{0.55}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{PhotoShop ®} & \barrule{0.5}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{RStudio} & \barrule{0.25}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.1}{0.5em}{cvpurple} \\
+\end{tabular}
+\end{minipage}
+
+\section*{Curriculum}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2018--Actualidad}{Investigador Semi-senior}{Valparaíso}{Chile \color{cvred}}{Proyecto de descarte pequeños pelágicos. \bigskip}{IFOP.png} \\
+    \cvevent{2017--2018}{Investigador}{Valparaíso}{Chile \color{cvred}}{Seguimiento de pesquería de crustáceos demersales \bigskip}{IFOP.png} \\
+\cvevent{2017}{Investigador asistente}{Santiago}{Chile \color{cvred}}{Virus respiratorios niños 0-2años e Influencia de ácidos grasos poliinsaturados en músculo esquelético. \bigskip}{UA.png} \\
+    
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Premios \& Menciones honoríficas}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    2008-2015 & Beca interna PUCV \\
+    2012 & Beca Conicyt \\
+    
+\end{tabular}
+\bigskip
+
+\section*{Idiomas}
+\begin{tabular}{l | ll}
+\textbf{Español} & C2 & {\phantom{x}\footnotesize Lengua materna} \\
+\textbf{Inglés} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+\textbf{Frances} & C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Publicaciones}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+    2013 & \emph{Relaciones tróficas de cinco especies de peces de interés comercial en la bahía de Cartagena, Caribe colombiano}, Anales de Instituto de Investigaciones Marinas y Costeras. INVEMAR. \\
+    2013 & \emph{Soybean meal induces intestinal inflammation in zebrafish larvae}, Plos One. \\
+     2017 & \emph{Nota Científica: “Protocolo para obtención de alevines axénicos de trucha arcoíris (Oncorhynchus mykiss)”.}, LAJAR. \\
+     2019 & \emph{Natural Compounds: A sustainable alternative to the phytopathogens control.},J. Chil. Chem. Soc. \\
+    
+\end{tabular}
+\bigskip
+
+\section*{Patentes}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+    Nov. 2015 & ``Método para producir probióticos autóctonos con actividad inmunoestimulante y su uso en profilaxis contra flavobacteriosis en salmónidos'', at: \emph{WO2016037296 A1} INTA-Universidad de Chile, Nov. 2015.
+\end{tabular}
+\end{minipage}
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small María Fernanda Jiménez Reyes \icon{\faEnvelopeO}{cvgreen}{} IFOP \icon{\faMapMarker}{cvgreen}{} Valparaíso-Chile \icon{\faPhone}{cvgreen}{} 56/9 3100 6316 \newline\icon{\faAt}{cvgreen}{} \protect\url{mariafej.84@gmail.com}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
